@@ -8,10 +8,21 @@ Some software developers were contracted to build some code, but there weren't q
 /*
 C is for Cookie
 */
-const cookies = ["Oatmeal Raisin", "Chocolate Chip", "Sugar", "Peanut Butter", "Snickerdoodle", "Ginger"]
-let y = 1
+// const cookies = ["Oatmeal Raisin", "Chocolate Chip", "Sugar", "Peanut Butter", "Snickerdoodle", "Ginger"]
+// let y = 1
 
-for (let x = 1; x < cookies.length; x++) {
-    const currentCookie = cookies[x]
-    console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`)
+// for (let x = 1; x < cookies.length; x++) {
+//     const currentCookie = cookies[x]
+//     console.log(`Mmmmmmm... that's a good ${currentCookie} cookie`)
+// }
+
+// ==================== Practice 2 ==========================
+/*
+Conjunction Function
+*/
+const conjunction = function (firstWord, secondWord) {
+    const conjoinedWord = `${firstWord} ${secondWord}`
+    console.log(conjoinedWord)
 }
+
+conjunction("Master", "Card")

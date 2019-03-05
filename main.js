@@ -31,21 +31,49 @@ Conjunction Function
 /*
 Mod Squad
 */
-document.querySelector(".show-info").innerHTML = HTMLRepresentation
-{
-    const ModSquad = {
-        "members": ["Pete Cochran", "Linc Hayes", "Julie Barnes", "Capt. Adam Greer", "Chief Barney Metcalf"],
-        "series": {
-            "start": "1968",
-            "end": "1973"
-        }
+// document.querySelector(".show-info").innerHTML = HTMLRepresentation
+// {
+//     const ModSquad = {
+//         "members": ["Pete Cochran", "Linc Hayes", "Julie Barnes", "Capt. Adam Greer", "Chief Barney Metcalf"],
+//         "series": {
+//             "start": "1968",
+//             "end": "1973"
+//         }
+//     }
+
+//     let HTMLRepresentation = `<h1>The Mod Squad</h1>`
+
+//     ModSquad.members.forEach(member => {
+//         HTMLRepresentation += `<div>${member}</div>`
+//         console.log(HTMLRepresentation)
+//     })
+// }
+
+// ==================== Practice 4 ==========================
+/*
+Simon Says 
+*/
+     
+const locations = [[1,1], [1,2], [1,3], [2,1], [2,2], [2,3]]
+let invalidCounter = 0
+
+for (let k = 0; k < locations.length; k++) {
+    const currentLocation = locations[k]
+    let invalidLocation = true
+
+    if (currentLocation[0] > 2) {
+        invalidLocation = true
     }
 
-    let HTMLRepresentation = `<h1>The Mod Squad</h1>`
-
-    ModSquad.members.forEach(member => {
-        HTMLRepresentation += `<div>${member}</div>`
-        console.log(HTMLRepresentation)
-    })
+    if (invalidLocation) {
+        invalidCounter ++
+        console.log("This location is invalid")
+    }
 }
 
+/*
+    Since k is used as the loop counter, it will be the
+    total number of locations, not the invalid ones. You
+    need to fix this somehow.
+*/
+console.log(`There were ${invalidCounter} invalid locations`)
